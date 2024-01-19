@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Controllers\WeatherForecastController.cs" />
+    <Compile Remove="WeatherForecast.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="output\contacts.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ContactsApp.Common\ContactsApp.Common.csproj" />
+    <ProjectReference Include="..\ContactsApp.Entity\ContactsApp.Entity.csproj" />
+    <ProjectReference Include="..\ContactsApp.Service\ContactsApp.Service.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="OutPut\" />
+  </ItemGroup>
+
+
+</Project>
